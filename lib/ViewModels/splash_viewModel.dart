@@ -13,10 +13,8 @@ class SplashServicesView  {
     await Future.delayed(const Duration(seconds: 3));
   }
   void isLogin() async {
-    await initializedSetting();
-    
     if (_authmanager.isLogged.value) {
-      Timer(const Duration(seconds: 3), () => Get.toNamed('/home_view'));
+      Timer(const Duration(seconds: 3), () => Get.toNamed('/dashboard_view'));
     } else {
       Timer(const Duration(seconds: 3), () => Get.toNamed('/login_view'));
     }

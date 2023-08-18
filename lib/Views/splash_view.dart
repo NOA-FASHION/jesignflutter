@@ -3,20 +3,20 @@ import 'package:get/get.dart';
 
 import '../ViewModels/splash_viewModel.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+class SplashView extends StatefulWidget {
+  const SplashView({Key? key}) : super(key: key);
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<SplashView> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashView> {
   SplashServicesView splashScreen = SplashServicesView();
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+    splashScreen.initializedSetting();
     splashScreen.isLogin();
   }
 

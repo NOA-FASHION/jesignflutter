@@ -4,4 +4,5 @@ class RouteName {
   static const String register = '/register_view';
   static const String forgotPassword = '/forgot_password_view';
   static const String homeView = '/home_view';
+  static const String dashboard = '/dashboard_view';
 }
